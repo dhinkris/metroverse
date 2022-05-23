@@ -38,7 +38,7 @@ class BoostHelper extends React.Component {
                 <Box gridColumn="span 8">
                     <div style={{ display: 'flex' }}>
                         <div style={{ flexGrow: 1 }}>
-                            <h5 style={{marginTop: "60px"}}> Disclaimer: This search featuhandleClearre is based on block info from 20000 to 48657. More info will be update hopefully by end of the day.</h5>
+                            <h5 style={{marginTop: "60px"}}> Disclaimer: This search feature is based on block info from 20000 to 48657. More info will be update hopefully by end of the day.</h5>
                             <SearchBoost handleSearch={this.handleSearch} handleClear={this.handleClear} />
                             
                             <Blocks  {...block_id} />
