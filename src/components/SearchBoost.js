@@ -19,10 +19,14 @@ export default class Tags extends React.Component {
         this.state.selected_boost.map((_boost)=>{
             boosts.push(_boost['title'])
         })
-
-        this.props.handleSearch(boosts)
+        if ((boosts.length)>0){
+            this.props.handleSearch(boosts)
+        }
     }
 
+    handleClear=()=>{
+        this.props.handleClear()
+    }
     render() {
         
         return (
@@ -44,8 +48,11 @@ export default class Tags extends React.Component {
                     )}
                 />
                 </Stack>
-                <Button sx={{  marginTop: "50px", }}   color="primary" onClick={this.handleSearch}>
+                <Button sx={{  marginTop: "50px", }}   color="primary"  variant="contained" onClick={this.handleSearch}>
                     Search
+                </Button>
+                <Button sx={{  marginTop: "50px", }}   color="primary" onClick={this.handleClear}>
+                    Clear all
                 </Button>
             </>
             

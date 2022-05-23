@@ -23,7 +23,7 @@ export default class Block extends React.Component {
                                     <Avatar src="https://opensea.io/favicon.ico"></Avatar>
                                 </a>
                             </>} label={item}></Chip>);
-                        }): <p>No data available. Try searching a  combo!</p>
+                        }): <p>No data available. Try searching a combo!</p>
                 }
             </div>
         )
