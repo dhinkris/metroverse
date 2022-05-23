@@ -44,7 +44,7 @@ export default class Tags extends React.Component {
                     )}
                 />
                 </Stack>
-                <Button sx={{  marginTop: "50px", }}  variant="contained" color="primary" onClick={this.handleSearch}>
+                <Button sx={{  marginTop: "50px", }}   color="primary" onClick={this.handleSearch}>
                     Search
                 </Button>
             </>
