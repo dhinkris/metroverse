@@ -6,6 +6,12 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Avatar from '@material-ui/core/Avatar';
 import Box from '@mui/material/Box';
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import Checkbox from '@mui/material/Checkbox';
+
+const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
+const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 export default class Tags extends React.Component {
     state={
@@ -39,20 +45,19 @@ export default class Tags extends React.Component {
                     id="tags-outlined"
                     options={top100Films}
                     getOptionLabel={(option) => option.title}
-                    filterSelectedOptions
+                    disableCloseOnSelect
                     onChange={this.handleChange}
                     groupBy={(option) => option.group}
-                    renderOption={(props, option) => (
-                        <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
-                          <img
-                            loading="lazy"
-                            width="20"
-                            src={option.img_src}
-                            srcSet={option.img_src}
-                            alt=""
+                    renderOption={(props, option, { selected }) => (
+                        <li {...props}>
+                          <Checkbox
+                            icon={icon}
+                            checkedIcon={checkedIcon}
+                            style={{ marginRight: 8 }}
+                            checked={selected}
                           />
                           {option.title}
-                        </Box>
+                        </li>
                       )}
                     renderInput={(params) => (
                         <TextField
