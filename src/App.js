@@ -1,4 +1,3 @@
-import logo from './favicon.ico';
 import './App.css';
 
 import BoostHelper from './BoostHelper';
