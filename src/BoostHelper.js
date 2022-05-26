@@ -44,7 +44,7 @@ class BoostHelper extends React.Component {
                 <Box gridColumn="span 8">
                     <div style={{ display: 'flex' }}>
                         <div style={{ flexGrow: 1 }}>
-                            <h5 style={{marginTop: "60px"}}> Disclaimer: This search feature is based on block info from 20000 to 62635. More info will be update hopefully by end of the day.
+                            <h5 style={{marginTop: "60px"}}> Disclaimer: This search feature is based on block info from 20000 to 70000. More info will be update hopefully by end of the day.
                             <br/><br/>
                             This website/search function is not affiliated or developed by the Metroverse team. It is a community driven project created to help fellow Metizens.
                             
